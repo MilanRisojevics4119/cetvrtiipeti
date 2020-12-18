@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+        }
+        nav{
+        background: #aa4411;;
+        height: 200px;
+        width: 100%;
+    }
+    
+    nav img
+    {
+        height: 200px;
+        width: 550px;
+    }
+    nav ul
+    {
+        float: right;
+        margin-right: 50px;
+        margin-top:50px;
+    }
+    nav ul li 
+    {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a 
+    {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase ;
+        padding: 7px 13px;
+        border-radius: 3px ;
+        
+    }
+    .active,a:hover
+    {   
+        background: rgb(3, 31, 116);
+        transition: all 0.5s;
+    }
+    </style>
+    <nav>
+        <img style="nav img" src="./images/logo.jpg" alt="logo">
+        <ul>
+            <li><a href="Pocetna.html" class="active">Pocetna</a></li>
+            <li><a href="Registracija.html">Registracija</a></li>
+            <li><a href="Brendovi">Brendovi</a></li>
+            <li><a href="Rasprodaja">Rasprodaja</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="moto"><h2 ><center>Jesenja kolekcija</center></h2></div>
+
+    <form class="forma"  method="POST">
+        <legend class="prvi">Registracija</legend>
+            Ime: <input type="text" class="unos" name="ime" placeholder="Unesite Ime">
+            Prezime: <input type="text" class="unos" name="prezime" placeholder="Unesite Prezime">
+            Email@: <input type="text" class="unos" name="email" placeholder="Unesite vas email">
+            <p>Pol:</p>
+            <hr color=black; width=100%>
+            <label for="Musko">Musko</label>
+              <input  type="checkbox" class="unos" name="musko">
+              <label for="Zensko">Zensko</label>
+            <input type="checkbox" class="unos" name="zensko">
+            Telefon: <input type="text" class="unos" name="telefon" placeholder="Unesite vas broj telefona">
+            <label for="cars">Brend:</label>
+            <select id="Marka" name="marka">
+          <option value="Nike">Nike</option>
+          <option value="Premiata">Premiata</option>
+          <option value="Paccioti 4US">Paccioti 4US</option>
+          <option value="Diesel">Diesel</option>
+          <option value="Replay">Replay</option>
+          <option value="Guess">Guess</option>
+            </select>
+            <input type="submit" value="Potvrdi">
+                  </form>
+                </div>
+                <div class="drugideo">
+                    <div class="proizvodi">
+                       <div class="boxsadrzaj">
+                           <div class="slika"> 
+                           <h2 class="naziv">
+                            Nike Air Force 1 Low Travis Scott Cactus Jack
+                           </h2>
+                           <hr>
+                           <img src="./images/cactus.jpg">
+               
+                           </div>
+                           <hr>
+                           <h3 class="cena">Cena: 550e</h3>
+                           <input class="kolicina" type="number" name="kol" placeholder="Kol">
+                           <input class="korpa" type="submit" value="Dodaj u korpu">
+                       </div>
+
+                       <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
